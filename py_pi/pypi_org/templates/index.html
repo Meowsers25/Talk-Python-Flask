@@ -5,9 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>First Try Jinja</title>
+    <style>
+        .title{
+            font-weight: bolder;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, Flasky World!!!!!</h1>
+    <h1>Python Package Index</h1>
+    <h2>Packages</h2>
+    TODO: Show Packages
+    {% for p in packages%}
+
+    <div>
+        <span class="title">
+            {{p.name.upper()}}
+        </span>
+        <span class="version">
+            {{p.version}}
+        </span>
+        
+    </div>
+    <br>
+    <!-- {{p}} -->
+    
+    {%endfor%}
     
 </body>
 </html>
